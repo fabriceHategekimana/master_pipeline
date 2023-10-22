@@ -1,0 +1,9 @@
+@startuml
+scale 10
+allow_mixing
+
+Grammar -> Parser
+Rules -> Type_Checker
+Code -> Diagnostics
+
+@enduml
