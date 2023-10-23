@@ -1,6 +1,10 @@
 {
   "name": "type_r",
   "rules": {
+    "expression": {
+      "type": "STRING",
+      "value": "wow"
+    },
     "identifier": {
       "type": "PATTERN",
       "value": "[A-Za-z][A-Za-z0-9]*"
@@ -378,35 +382,6 @@
                 "value": "u{[0-9a-fA-F]+}"
               }
             ]
-          }
-        ]
-      }
-    },
-    "_expression": {
-      "type": "PREC_RIGHT",
-      "value": 0,
-      "content": {
-        "type": "CHOICE",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "integer"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "identifier"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "float"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "complex"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "string"
           }
         ]
       }

@@ -1,7 +1,1 @@
-    _expression: $ => prec.right(choice(
-      $.integer,
-      $.identifier,
-      $.float,
-      $.complex,
-      $.string,
-    )),
+expression : $ => 'wow',

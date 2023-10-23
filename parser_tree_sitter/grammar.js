@@ -38,6 +38,7 @@ module.exports = grammar({
   name: 'type_r',
 
   rules: {
+expression : $ => 'wow',
       identifier: $ => /[A-Za-z][A-Za-z0-9]*/,
 	  number : $ => /-?\d+(\.\d+)?/,
 	  type: $ => choice("int", "bool"),
@@ -102,13 +103,6 @@ module.exports = grammar({
         /u[0-9a-fA-F]{4}/,
         /u{[0-9a-fA-F]+}/
       )
-    )),
-    _expression: $ => prec.right(choice(
-      $.integer,
-      $.identifier,
-      $.float,
-      $.complex,
-      $.string,
     )),
   }
 });
